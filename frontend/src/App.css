@@ -1,0 +1,226 @@
+/* Main container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('/images/background image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f0f0f0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+/* Header for title and description */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.app-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.app-description {
+  font-size: 1.5rem;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  padding: 0 30px;
+}
+
+/* Form container */
+.submission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
+  width: 80%;
+}
+
+/* Form layout */
+.form-container {
+  width: 100%;
+}
+
+.data-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #444;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+button {
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 14px;
+  background-color: #ff416c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4b2b;
+}
+
+.loading {
+  grid-column: 1 / span 2;
+  color: #ff416c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Logos container */
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.15);
+}
+
+/* Footer disclaimer */
+.disclaimer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Next steps message */
+.next-steps {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.close-modal, .modal-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ff416c;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal:hover, .modal-button:hover {
+  background-color: #ff4b2b;
+}
