@@ -1,5 +1,5 @@
 # Diabetes Risk Prediction App
-![App Screenshot](images/appsc1.jpg)
+![App Screenshot](frontewnd/public/images/appsc1.jpg)
 ## Overview
 The **Diabetes Risk Prediction App** is an AI-powered application designed to provide a personalized diabetes risk assessment based on user-provided information such as age, weight, height, lifestyle habits, and more. This tool aims to help individuals become more proactive about their health by offering insights and actionable recommendations based on credible datasets from the **Centers for Disease Control and Prevention (CDC)** and the **World Health Organization (WHO)**.
 
